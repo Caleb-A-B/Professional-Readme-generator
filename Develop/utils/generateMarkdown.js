@@ -76,6 +76,20 @@ function generateMarkdown(data) {
   To contribute to this app, create a pull request.
   -Fork the Repo
   -create a feature branch
+  -commit your new feature
+  -push your branch
+  -create a new pull request
+
+---
+
+## Tests:
+  ${data.test}
+
+---
+
+## Contact Information:
+* Github username: ${data.userName}
+* Github email: ${data.userEmail}
 
 `;
 }
