@@ -12,7 +12,7 @@ const writeFileAsync = util.promisify(fs.writeFile)
 
 async function init() {
     try {
-        const answers= await inquirer.createPromptModule(questions)
+        const answers= await inquirer.prompt(questions.question)
         // answers.licenseBadge = licenseBadge(answers.license)
         let readMeData = generateMarkdown(answers)
         await writeFileAsync("created-REAME.md", readMeData)
